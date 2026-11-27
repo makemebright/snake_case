@@ -1,0 +1,4198 @@
+[
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "right",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-1",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 8
+          },
+          {
+            "x": 8,
+            "y": 10
+          },
+          {
+            "x": 5,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 10
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 6
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 5
+            },
+            "health": 93,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 6,
+                "y": 5
+              },
+              {
+                "x": 7,
+                "y": 5
+              },
+              {
+                "x": 7,
+                "y": 6
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 6,
+              "y": 5
+            },
+            "health": 93,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "25f65029-b8e7-4550-a63c-8678577d9a3e",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 7,
+      "you": {
+        "body": [
+          {
+            "x": 4,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 6
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 4,
+          "y": 5
+        },
+        "health": 93,
+        "id": "player-0",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 0",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 0,
+    "seed": 101,
+    "turn": 8
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 5,
+      "move": "left",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-0",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 8
+          },
+          {
+            "x": 2,
+            "y": 2
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 5
+              },
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 4,
+                "y": 4
+              },
+              {
+                "x": 5,
+                "y": 4
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 5
+            },
+            "health": 96,
+            "id": "player-0",
+            "latency": "0",
+            "length": 4,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 6,
+                "y": 6
+              },
+              {
+                "x": 6,
+                "y": 5
+              },
+              {
+                "x": 6,
+                "y": 4
+              },
+              {
+                "x": 7,
+                "y": 4
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 6,
+              "y": 6
+            },
+            "health": 90,
+            "id": "player-1",
+            "latency": "0",
+            "length": 4,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "25f65029-b8e7-4550-a63c-8678577d9a3e",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 12,
+      "you": {
+        "body": [
+          {
+            "x": 6,
+            "y": 6
+          },
+          {
+            "x": 6,
+            "y": 5
+          },
+          {
+            "x": 6,
+            "y": 4
+          },
+          {
+            "x": 7,
+            "y": 4
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 6,
+          "y": 6
+        },
+        "health": 90,
+        "id": "player-1",
+        "latency": "0",
+        "length": 4,
+        "name": "Player 1",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 1,
+    "seed": 101,
+    "turn": 13
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "right",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-1",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 8
+          },
+          {
+            "x": 8,
+            "y": 10
+          },
+          {
+            "x": 5,
+            "y": 5
+          },
+          {
+            "x": 0,
+            "y": 9
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 6
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 5
+            },
+            "health": 93,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 6,
+                "y": 5
+              },
+              {
+                "x": 7,
+                "y": 5
+              },
+              {
+                "x": 7,
+                "y": 6
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 6,
+              "y": 5
+            },
+            "health": 93,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "81280edb-c110-4560-b3b1-0cc4d1522bc6",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 7,
+      "you": {
+        "body": [
+          {
+            "x": 4,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 6
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 4,
+          "y": 5
+        },
+        "health": 93,
+        "id": "player-0",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 0",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 0,
+    "seed": 102,
+    "turn": 8
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 5,
+      "move": "down",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-0",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 8
+          },
+          {
+            "x": 0,
+            "y": 9
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 4
+              },
+              {
+                "x": 4,
+                "y": 4
+              },
+              {
+                "x": 5,
+                "y": 4
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 3,
+              "y": 5
+            },
+            "health": 96,
+            "id": "player-0",
+            "latency": "0",
+            "length": 4,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 6
+              },
+              {
+                "x": 5,
+                "y": 6
+              },
+              {
+                "x": 6,
+                "y": 6
+              },
+              {
+                "x": 6,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 6
+            },
+            "health": 90,
+            "id": "player-1",
+            "latency": "0",
+            "length": 4,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "81280edb-c110-4560-b3b1-0cc4d1522bc6",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 12,
+      "you": {
+        "body": [
+          {
+            "x": 4,
+            "y": 6
+          },
+          {
+            "x": 5,
+            "y": 6
+          },
+          {
+            "x": 6,
+            "y": 6
+          },
+          {
+            "x": 6,
+            "y": 5
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 4,
+          "y": 6
+        },
+        "health": 90,
+        "id": "player-1",
+        "latency": "0",
+        "length": 4,
+        "name": "Player 1",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 1,
+    "seed": 102,
+    "turn": 13
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 7,
+      "move": "down",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-1",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 4,
+            "y": 10
+          },
+          {
+            "x": 10,
+            "y": 4
+          },
+          {
+            "x": 5,
+            "y": 5
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 6
+              },
+              {
+                "x": 5,
+                "y": 7
+              },
+              {
+                "x": 5,
+                "y": 8
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 6
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 6,
+                "y": 5
+              },
+              {
+                "x": 7,
+                "y": 5
+              },
+              {
+                "x": 8,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 6,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "087d5a64-0e27-41ee-bae9-32c1e29bc819",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 5,
+            "y": 6
+          },
+          {
+            "x": 5,
+            "y": 7
+          },
+          {
+            "x": 5,
+            "y": 8
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 5,
+          "y": 6
+        },
+        "health": 97,
+        "id": "player-0",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 0",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 0,
+    "seed": 103,
+    "turn": 4
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 7,
+      "move": "left",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-0",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 4,
+            "y": 10
+          },
+          {
+            "x": 10,
+            "y": 4
+          },
+          {
+            "x": 5,
+            "y": 5
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 6
+              },
+              {
+                "x": 5,
+                "y": 7
+              },
+              {
+                "x": 5,
+                "y": 8
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 6
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 6,
+                "y": 5
+              },
+              {
+                "x": 7,
+                "y": 5
+              },
+              {
+                "x": 8,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 6,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "087d5a64-0e27-41ee-bae9-32c1e29bc819",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 6,
+            "y": 5
+          },
+          {
+            "x": 7,
+            "y": 5
+          },
+          {
+            "x": 8,
+            "y": 5
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 6,
+          "y": 5
+        },
+        "health": 97,
+        "id": "player-1",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 1",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 1,
+    "seed": 103,
+    "turn": 4
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 7,
+      "move": "down",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-1",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 4,
+            "y": 10
+          },
+          {
+            "x": 0,
+            "y": 4
+          },
+          {
+            "x": 5,
+            "y": 5
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 6
+              },
+              {
+                "x": 5,
+                "y": 7
+              },
+              {
+                "x": 5,
+                "y": 8
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 6
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 2,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "c5feee92-9839-45b0-94d7-c9526850e563",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 5,
+            "y": 6
+          },
+          {
+            "x": 5,
+            "y": 7
+          },
+          {
+            "x": 5,
+            "y": 8
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 5,
+          "y": 6
+        },
+        "health": 97,
+        "id": "player-0",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 0",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 0,
+    "seed": 104,
+    "turn": 4
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 7,
+      "move": "right",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-0",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 4,
+            "y": 10
+          },
+          {
+            "x": 0,
+            "y": 4
+          },
+          {
+            "x": 5,
+            "y": 5
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 6
+              },
+              {
+                "x": 5,
+                "y": 7
+              },
+              {
+                "x": 5,
+                "y": 8
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 6
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 2,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "c5feee92-9839-45b0-94d7-c9526850e563",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 4,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 5
+          },
+          {
+            "x": 2,
+            "y": 5
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 4,
+          "y": 5
+        },
+        "health": 97,
+        "id": "player-1",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 1",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 1,
+    "seed": 104,
+    "turn": 4
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "up",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-1",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 10,
+            "y": 2
+          },
+          {
+            "x": 9,
+            "y": 10
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 6,
+                "y": 3
+              },
+              {
+                "x": 5,
+                "y": 3
+              },
+              {
+                "x": 5,
+                "y": 4
+              },
+              {
+                "x": 4,
+                "y": 4
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 6,
+              "y": 3
+            },
+            "health": 89,
+            "id": "player-0",
+            "latency": "0",
+            "length": 4,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 7,
+                "y": 4
+              },
+              {
+                "x": 7,
+                "y": 5
+              },
+              {
+                "x": 6,
+                "y": 5
+              },
+              {
+                "x": 6,
+                "y": 6
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 7,
+              "y": 4
+            },
+            "health": 95,
+            "id": "player-1",
+            "latency": "0",
+            "length": 4,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "bb19bee3-482b-4292-806b-8d04665ce899",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 13,
+      "you": {
+        "body": [
+          {
+            "x": 6,
+            "y": 3
+          },
+          {
+            "x": 5,
+            "y": 3
+          },
+          {
+            "x": 5,
+            "y": 4
+          },
+          {
+            "x": 4,
+            "y": 4
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 6,
+          "y": 3
+        },
+        "health": 89,
+        "id": "player-0",
+        "latency": "0",
+        "length": 4,
+        "name": "Player 0",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 0,
+    "seed": 105,
+    "turn": 14
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 5,
+      "move": "down",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-0",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 10,
+            "y": 2
+          },
+          {
+            "x": 9,
+            "y": 10
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 3
+              },
+              {
+                "x": 4,
+                "y": 3
+              },
+              {
+                "x": 4,
+                "y": 4
+              },
+              {
+                "x": 4,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 3
+            },
+            "health": 90,
+            "id": "player-0",
+            "latency": "0",
+            "length": 4,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 5
+              },
+              {
+                "x": 6,
+                "y": 5
+              },
+              {
+                "x": 6,
+                "y": 6
+              },
+              {
+                "x": 5,
+                "y": 6
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 5
+            },
+            "health": 96,
+            "id": "player-1",
+            "latency": "0",
+            "length": 4,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "bb19bee3-482b-4292-806b-8d04665ce899",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 12,
+      "you": {
+        "body": [
+          {
+            "x": 5,
+            "y": 5
+          },
+          {
+            "x": 6,
+            "y": 5
+          },
+          {
+            "x": 6,
+            "y": 6
+          },
+          {
+            "x": 5,
+            "y": 6
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 5,
+          "y": 5
+        },
+        "health": 96,
+        "id": "player-1",
+        "latency": "0",
+        "length": 4,
+        "name": "Player 1",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 1,
+    "seed": 105,
+    "turn": 13
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "right",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-1",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 6
+          },
+          {
+            "x": 10,
+            "y": 4
+          },
+          {
+            "x": 5,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 9
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 2,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 6,
+                "y": 5
+              },
+              {
+                "x": 7,
+                "y": 5
+              },
+              {
+                "x": 8,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 6,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "6d9a860d-bfe1-4a48-9180-f5ff5908d894",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 4,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 5
+          },
+          {
+            "x": 2,
+            "y": 5
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 4,
+          "y": 5
+        },
+        "health": 97,
+        "id": "player-0",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 0",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 0,
+    "seed": 106,
+    "turn": 4
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "left",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-0",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 6
+          },
+          {
+            "x": 10,
+            "y": 4
+          },
+          {
+            "x": 5,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 9
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 2,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 6,
+                "y": 5
+              },
+              {
+                "x": 7,
+                "y": 5
+              },
+              {
+                "x": 8,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 6,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "6d9a860d-bfe1-4a48-9180-f5ff5908d894",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 6,
+            "y": 5
+          },
+          {
+            "x": 7,
+            "y": 5
+          },
+          {
+            "x": 8,
+            "y": 5
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 6,
+          "y": 5
+        },
+        "health": 97,
+        "id": "player-1",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 1",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 1,
+    "seed": 106,
+    "turn": 4
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "right",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-1",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 6
+          },
+          {
+            "x": 4,
+            "y": 0
+          },
+          {
+            "x": 5,
+            "y": 5
+          },
+          {
+            "x": 9,
+            "y": 10
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 2,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 4
+              },
+              {
+                "x": 5,
+                "y": 3
+              },
+              {
+                "x": 5,
+                "y": 2
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 4
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "adba6420-7fd0-4e7c-8924-2e71e806f1a3",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 4,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 5
+          },
+          {
+            "x": 2,
+            "y": 5
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 4,
+          "y": 5
+        },
+        "health": 97,
+        "id": "player-0",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 0",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 0,
+    "seed": 107,
+    "turn": 4
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "up",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-0",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 6
+          },
+          {
+            "x": 4,
+            "y": 0
+          },
+          {
+            "x": 5,
+            "y": 5
+          },
+          {
+            "x": 9,
+            "y": 10
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 2,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 4
+              },
+              {
+                "x": 5,
+                "y": 3
+              },
+              {
+                "x": 5,
+                "y": 2
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 4
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "adba6420-7fd0-4e7c-8924-2e71e806f1a3",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 5,
+            "y": 4
+          },
+          {
+            "x": 5,
+            "y": 3
+          },
+          {
+            "x": 5,
+            "y": 2
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 5,
+          "y": 4
+        },
+        "health": 97,
+        "id": "player-1",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 1",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 1,
+    "seed": 107,
+    "turn": 4
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "up",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-1",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 4,
+            "y": 0
+          },
+          {
+            "x": 10,
+            "y": 6
+          },
+          {
+            "x": 5,
+            "y": 5
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 4
+              },
+              {
+                "x": 5,
+                "y": 3
+              },
+              {
+                "x": 5,
+                "y": 2
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 4
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 6,
+                "y": 5
+              },
+              {
+                "x": 7,
+                "y": 5
+              },
+              {
+                "x": 8,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 6,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "fce383bd-7583-4411-8c14-8ccca0bc3358",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 5,
+            "y": 4
+          },
+          {
+            "x": 5,
+            "y": 3
+          },
+          {
+            "x": 5,
+            "y": 2
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 5,
+          "y": 4
+        },
+        "health": 97,
+        "id": "player-0",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 0",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 0,
+    "seed": 108,
+    "turn": 4
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "left",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-0",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 4,
+            "y": 0
+          },
+          {
+            "x": 10,
+            "y": 6
+          },
+          {
+            "x": 5,
+            "y": 5
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 4
+              },
+              {
+                "x": 5,
+                "y": 3
+              },
+              {
+                "x": 5,
+                "y": 2
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 4
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 6,
+                "y": 5
+              },
+              {
+                "x": 7,
+                "y": 5
+              },
+              {
+                "x": 8,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 6,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "fce383bd-7583-4411-8c14-8ccca0bc3358",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 6,
+            "y": 5
+          },
+          {
+            "x": 7,
+            "y": 5
+          },
+          {
+            "x": 8,
+            "y": 5
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 6,
+          "y": 5
+        },
+        "health": 97,
+        "id": "player-1",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 1",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 1,
+    "seed": 108,
+    "turn": 4
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "right",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-1",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 6
+          },
+          {
+            "x": 6,
+            "y": 0
+          },
+          {
+            "x": 5,
+            "y": 5
+          },
+          {
+            "x": 2,
+            "y": 8
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 2,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 4
+              },
+              {
+                "x": 5,
+                "y": 3
+              },
+              {
+                "x": 5,
+                "y": 2
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 4
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "b177abb1-8594-4a86-8c7b-ef5c2c399b28",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 4,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 5
+          },
+          {
+            "x": 2,
+            "y": 5
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 4,
+          "y": 5
+        },
+        "health": 97,
+        "id": "player-0",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 0",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 0,
+    "seed": 109,
+    "turn": 4
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "up",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-0",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 6
+          },
+          {
+            "x": 6,
+            "y": 0
+          },
+          {
+            "x": 5,
+            "y": 5
+          },
+          {
+            "x": 2,
+            "y": 8
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 2,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 4
+              },
+              {
+                "x": 5,
+                "y": 3
+              },
+              {
+                "x": 5,
+                "y": 2
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 4
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "b177abb1-8594-4a86-8c7b-ef5c2c399b28",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 5,
+            "y": 4
+          },
+          {
+            "x": 5,
+            "y": 3
+          },
+          {
+            "x": 5,
+            "y": 2
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 5,
+          "y": 4
+        },
+        "health": 97,
+        "id": "player-1",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 1",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 1,
+    "seed": 109,
+    "turn": 4
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 5,
+      "move": "up",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-1",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 2
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 4
+              },
+              {
+                "x": 5,
+                "y": 4
+              },
+              {
+                "x": 6,
+                "y": 4
+              },
+              {
+                "x": 6,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 4
+            },
+            "health": 90,
+            "id": "player-0",
+            "latency": "0",
+            "length": 4,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 6
+              },
+              {
+                "x": 4,
+                "y": 6
+              },
+              {
+                "x": 5,
+                "y": 6
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 3,
+              "y": 5
+            },
+            "health": 96,
+            "id": "player-1",
+            "latency": "0",
+            "length": 4,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "54238896-ce18-4e26-bd47-646c49225fbb",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 12,
+      "you": {
+        "body": [
+          {
+            "x": 4,
+            "y": 4
+          },
+          {
+            "x": 5,
+            "y": 4
+          },
+          {
+            "x": 6,
+            "y": 4
+          },
+          {
+            "x": 6,
+            "y": 5
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 4,
+          "y": 4
+        },
+        "health": 90,
+        "id": "player-0",
+        "latency": "0",
+        "length": 4,
+        "name": "Player 0",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 0,
+    "seed": 110,
+    "turn": 13
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 5,
+      "move": "right",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-0",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 2
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 3
+              },
+              {
+                "x": 6,
+                "y": 3
+              },
+              {
+                "x": 6,
+                "y": 4
+              },
+              {
+                "x": 6,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 3
+            },
+            "health": 90,
+            "id": "player-0",
+            "latency": "0",
+            "length": 4,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 4
+              },
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 4,
+                "y": 6
+              },
+              {
+                "x": 5,
+                "y": 6
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 4
+            },
+            "health": 96,
+            "id": "player-1",
+            "latency": "0",
+            "length": 4,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "54238896-ce18-4e26-bd47-646c49225fbb",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 12,
+      "you": {
+        "body": [
+          {
+            "x": 4,
+            "y": 4
+          },
+          {
+            "x": 4,
+            "y": 5
+          },
+          {
+            "x": 4,
+            "y": 6
+          },
+          {
+            "x": 5,
+            "y": 6
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 4,
+          "y": 4
+        },
+        "health": 96,
+        "id": "player-1",
+        "latency": "0",
+        "length": 4,
+        "name": "Player 1",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 1,
+    "seed": 110,
+    "turn": 13
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 1,
+      "move": "left",
+      "nodes": 3
+    },
+    "eliminated_by": "player-1",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 10
+          },
+          {
+            "x": 6,
+            "y": 0
+          },
+          {
+            "x": 6,
+            "y": 5
+          },
+          {
+            "x": 5,
+            "y": 1
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 10,
+                "y": 0
+              },
+              {
+                "x": 10,
+                "y": 1
+              },
+              {
+                "x": 10,
+                "y": 2
+              },
+              {
+                "x": 10,
+                "y": 3
+              },
+              {
+                "x": 10,
+                "y": 4
+              },
+              {
+                "x": 10,
+                "y": 5
+              },
+              {
+                "x": 10,
+                "y": 6
+              },
+              {
+                "x": 10,
+                "y": 7
+              },
+              {
+                "x": 10,
+                "y": 8
+              },
+              {
+                "x": 10,
+                "y": 9
+              },
+              {
+                "x": 9,
+                "y": 9
+              },
+              {
+                "x": 8,
+                "y": 9
+              },
+              {
+                "x": 7,
+                "y": 9
+              },
+              {
+                "x": 6,
+                "y": 9
+              },
+              {
+                "x": 5,
+                "y": 9
+              },
+              {
+                "x": 5,
+                "y": 10
+              },
+              {
+                "x": 4,
+                "y": 10
+              },
+              {
+                "x": 4,
+                "y": 9
+              },
+              {
+                "x": 4,
+                "y": 8
+              },
+              {
+                "x": 4,
+                "y": 7
+              },
+              {
+                "x": 5,
+                "y": 7
+              },
+              {
+                "x": 5,
+                "y": 8
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 10,
+              "y": 0
+            },
+            "health": 90,
+            "id": "player-0",
+            "latency": "0",
+            "length": 22,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 9,
+                "y": 1
+              },
+              {
+                "x": 9,
+                "y": 2
+              },
+              {
+                "x": 9,
+                "y": 3
+              },
+              {
+                "x": 9,
+                "y": 4
+              },
+              {
+                "x": 9,
+                "y": 5
+              },
+              {
+                "x": 9,
+                "y": 6
+              },
+              {
+                "x": 8,
+                "y": 6
+              },
+              {
+                "x": 7,
+                "y": 6
+              },
+              {
+                "x": 6,
+                "y": 6
+              },
+              {
+                "x": 5,
+                "y": 6
+              },
+              {
+                "x": 4,
+                "y": 6
+              },
+              {
+                "x": 3,
+                "y": 6
+              },
+              {
+                "x": 3,
+                "y": 7
+              },
+              {
+                "x": 3,
+                "y": 8
+              },
+              {
+                "x": 3,
+                "y": 9
+              },
+              {
+                "x": 2,
+                "y": 9
+              },
+              {
+                "x": 2,
+                "y": 8
+              },
+              {
+                "x": 1,
+                "y": 8
+              },
+              {
+                "x": 1,
+                "y": 9
+              },
+              {
+                "x": 0,
+                "y": 9
+              },
+              {
+                "x": 0,
+                "y": 8
+              },
+              {
+                "x": 0,
+                "y": 7
+              },
+              {
+                "x": 0,
+                "y": 6
+              },
+              {
+                "x": 0,
+                "y": 5
+              },
+              {
+                "x": 0,
+                "y": 4
+              },
+              {
+                "x": 0,
+                "y": 3
+              },
+              {
+                "x": 0,
+                "y": 2
+              },
+              {
+                "x": 0,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": 2
+              },
+              {
+                "x": 2,
+                "y": 2
+              },
+              {
+                "x": 3,
+                "y": 2
+              },
+              {
+                "x": 4,
+                "y": 2
+              },
+              {
+                "x": 4,
+                "y": 3
+              },
+              {
+                "x": 3,
+                "y": 3
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 9,
+              "y": 1
+            },
+            "health": 87,
+            "id": "player-1",
+            "latency": "0",
+            "length": 35,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "5538da8e-59b6-40e9-84a2-942fc0d4f217",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 346,
+      "you": {
+        "body": [
+          {
+            "x": 10,
+            "y": 0
+          },
+          {
+            "x": 10,
+            "y": 1
+          },
+          {
+            "x": 10,
+            "y": 2
+          },
+          {
+            "x": 10,
+            "y": 3
+          },
+          {
+            "x": 10,
+            "y": 4
+          },
+          {
+            "x": 10,
+            "y": 5
+          },
+          {
+            "x": 10,
+            "y": 6
+          },
+          {
+            "x": 10,
+            "y": 7
+          },
+          {
+            "x": 10,
+            "y": 8
+          },
+          {
+            "x": 10,
+            "y": 9
+          },
+          {
+            "x": 9,
+            "y": 9
+          },
+          {
+            "x": 8,
+            "y": 9
+          },
+          {
+            "x": 7,
+            "y": 9
+          },
+          {
+            "x": 6,
+            "y": 9
+          },
+          {
+            "x": 5,
+            "y": 9
+          },
+          {
+            "x": 5,
+            "y": 10
+          },
+          {
+            "x": 4,
+            "y": 10
+          },
+          {
+            "x": 4,
+            "y": 9
+          },
+          {
+            "x": 4,
+            "y": 8
+          },
+          {
+            "x": 4,
+            "y": 7
+          },
+          {
+            "x": 5,
+            "y": 7
+          },
+          {
+            "x": 5,
+            "y": 8
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 10,
+          "y": 0
+        },
+        "health": 90,
+        "id": "player-0",
+        "latency": "0",
+        "length": 22,
+        "name": "Player 0",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 0,
+    "seed": 111,
+    "turn": 347
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "down",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-0",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 4
+          },
+          {
+            "x": 0,
+            "y": 2
+          },
+          {
+            "x": 9,
+            "y": 8
+          },
+          {
+            "x": 3,
+            "y": 9
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 3,
+                "y": 4
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 6
+              },
+              {
+                "x": 3,
+                "y": 7
+              },
+              {
+                "x": 4,
+                "y": 7
+              },
+              {
+                "x": 4,
+                "y": 6
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 3,
+              "y": 4
+            },
+            "health": 86,
+            "id": "player-0",
+            "latency": "0",
+            "length": 6,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 5,
+                "y": 5
+              },
+              {
+                "x": 6,
+                "y": 5
+              },
+              {
+                "x": 6,
+                "y": 4
+              },
+              {
+                "x": 6,
+                "y": 3
+              },
+              {
+                "x": 5,
+                "y": 3
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 5
+            },
+            "health": 69,
+            "id": "player-1",
+            "latency": "0",
+            "length": 6,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "5538da8e-59b6-40e9-84a2-942fc0d4f217",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 41,
+      "you": {
+        "body": [
+          {
+            "x": 4,
+            "y": 5
+          },
+          {
+            "x": 5,
+            "y": 5
+          },
+          {
+            "x": 6,
+            "y": 5
+          },
+          {
+            "x": 6,
+            "y": 4
+          },
+          {
+            "x": 6,
+            "y": 3
+          },
+          {
+            "x": 5,
+            "y": 3
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 4,
+          "y": 5
+        },
+        "health": 69,
+        "id": "player-1",
+        "latency": "0",
+        "length": 6,
+        "name": "Player 1",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 1,
+    "seed": 111,
+    "turn": 42
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "right",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-1",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 4
+          },
+          {
+            "x": 4,
+            "y": 10
+          },
+          {
+            "x": 5,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 3
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 2,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 6
+              },
+              {
+                "x": 5,
+                "y": 7
+              },
+              {
+                "x": 5,
+                "y": 8
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 6
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "d6a6db41-ff1b-45ca-94f0-9f3749c99b84",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 4,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 5
+          },
+          {
+            "x": 2,
+            "y": 5
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 4,
+          "y": 5
+        },
+        "health": 97,
+        "id": "player-0",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 0",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 0,
+    "seed": 112,
+    "turn": 4
+  },
+  {
+    "cause": "HeadToHeadCollision",
+    "decision": {
+      "depth": 6,
+      "move": "down",
+      "nodes": 6000
+    },
+    "eliminated_by": "player-0",
+    "position_before_death": {
+      "board": {
+        "food": [
+          {
+            "x": 0,
+            "y": 4
+          },
+          {
+            "x": 4,
+            "y": 10
+          },
+          {
+            "x": 5,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 3
+          }
+        ],
+        "hazards": [],
+        "height": 11,
+        "snakes": [
+          {
+            "body": [
+              {
+                "x": 4,
+                "y": 5
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 2,
+                "y": 5
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 4,
+              "y": 5
+            },
+            "health": 97,
+            "id": "player-0",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 0",
+            "shout": "",
+            "squad": ""
+          },
+          {
+            "body": [
+              {
+                "x": 5,
+                "y": 6
+              },
+              {
+                "x": 5,
+                "y": 7
+              },
+              {
+                "x": 5,
+                "y": 8
+              }
+            ],
+            "customizations": {
+              "color": "",
+              "head": "",
+              "tail": ""
+            },
+            "head": {
+              "x": 5,
+              "y": 6
+            },
+            "health": 97,
+            "id": "player-1",
+            "latency": "0",
+            "length": 3,
+            "name": "Player 1",
+            "shout": "",
+            "squad": ""
+          }
+        ],
+        "width": 11
+      },
+      "game": {
+        "id": "d6a6db41-ff1b-45ca-94f0-9f3749c99b84",
+        "map": "standard",
+        "ruleset": {
+          "name": "standard",
+          "settings": {
+            "foodSpawnChance": 15,
+            "hazardDamagePerTurn": 15,
+            "hazardMap": "",
+            "hazardMapAuthor": "",
+            "minimumFood": 1,
+            "royale": {
+              "shrinkEveryNTurns": 0
+            },
+            "squad": {
+              "allowBodyCollisions": false,
+              "sharedElimination": false,
+              "sharedHealth": false,
+              "sharedLength": false
+            }
+          },
+          "version": "v1.0.0"
+        },
+        "source": "custom",
+        "timeout": 500
+      },
+      "turn": 3,
+      "you": {
+        "body": [
+          {
+            "x": 5,
+            "y": 6
+          },
+          {
+            "x": 5,
+            "y": 7
+          },
+          {
+            "x": 5,
+            "y": 8
+          }
+        ],
+        "customizations": {
+          "color": "",
+          "head": "",
+          "tail": ""
+        },
+        "head": {
+          "x": 5,
+          "y": 6
+        },
+        "health": 97,
+        "id": "player-1",
+        "latency": "0",
+        "length": 3,
+        "name": "Player 1",
+        "shout": "",
+        "squad": ""
+      }
+    },
+    "seat": 1,
+    "seed": 112,
+    "turn": 4
+  }
+]

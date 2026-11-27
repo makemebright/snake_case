@@ -1,0 +1,27 @@
+[package]
+name = "taiga-snake"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.90"
+default-run = "taiga-snake"
+
+[features]
+lab = ["dep:clap", "dep:engine-core"]
+
+[dependencies]
+axum = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "net", "rt"] }
+rules = { git = "https://github.com/BattlesnakeOfficial/arena", rev = "0d5202c123a810c7cecabdbd9074659548b7865a" }
+engine-core = { git = "https://github.com/BattlesnakeOfficial/arena", rev = "0d5202c123a810c7cecabdbd9074659548b7865a", optional = true }
+clap = { version = "4", features = ["derive"], optional = true }
+
+[[bin]]
+name = "lab"
+path = "src/bin/lab.rs"
+required-features = ["lab"]
+
+[profile.release]
+codegen-units = 1
+lto = "thin"
