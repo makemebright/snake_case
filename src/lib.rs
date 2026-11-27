@@ -15,6 +15,7 @@ const DIRECTIONS: [Direction; 4] = [
 ];
 const WIN: i32 = 30_000;
 const INFINITY: i32 = 40_000;
+const IMMEDIATE_RISK_PENALTY: i32 = 300;
 
 #[derive(Debug, Clone, Copy)]
 pub struct Settings {
@@ -104,8 +105,14 @@ pub fn choose(
         limit,
         nodes: 0,
     };
+    let surviving_root_moves = search.surviving_root_moves(board);
     for depth in 1..=limit.depth {
-        let Some((direction, score)) = search.root(board, depth, decision.direction) else {
+        let Some((direction, score)) = search.root(
+            board,
+            depth,
+            decision.direction,
+            surviving_root_moves,
+        ) else {
             break;
         };
         decision.direction = direction;
@@ -132,6 +139,7 @@ pub fn greedy(board: &BoardState, us: usize, settings: Settings, weights: Weight
         .collect();
 
     let mut best = (i32::MIN, fallback(board, us));
+    let mut best_without_head_risk = None;
     for (index, direction) in DIRECTIONS.into_iter().enumerate() {
         if moves & (1 << index) == 0 {
             continue;
@@ -144,6 +152,7 @@ pub fn greedy(board: &BoardState, us: usize, settings: Settings, weights: Weight
         if bit & position.bodies != 0 {
             score -= 12_000;
         }
+        let mut head_risk = false;
         for (enemy, enemy_moves) in &enemies {
             for (index, response) in DIRECTIONS.into_iter().enumerate() {
                 if enemy_moves & (1 << index) == 0 || moved(enemy.head(), response) != target {
@@ -151,6 +160,7 @@ pub fn greedy(board: &BoardState, us: usize, settings: Settings, weights: Weight
                 }
                 let enemy_length = enemy.body.len() + usize::from(eating);
                 if enemy_length >= length {
+                    head_risk = true;
                     score -= if enemy_length == length { 3_000 } else { 6_000 };
                 }
             }
@@ -158,8 +168,14 @@ pub fn greedy(board: &BoardState, us: usize, settings: Settings, weights: Weight
         if score > best.0 {
             best = (score, direction);
         }
+        if !head_risk
+            && best_without_head_risk
+                .is_none_or(|candidate: (i32, Direction)| score > candidate.0)
+        {
+            best_without_head_risk = Some((score, direction));
+        }
     }
-    best.1
+    best_without_head_risk.unwrap_or(best).1
 }
 
 fn fallback(board: &BoardState, us: usize) -> Direction {
@@ -265,15 +281,44 @@ impl Search {
         board: &BoardState,
         depth: u8,
         preferred: Direction,
+        surviving_moves: u8,
     ) -> Option<(Direction, i32)> {
         let mut result = (preferred, -INFINITY);
         for direction in ordered_moves(board, self.us, self.settings, preferred) {
-            let score = self.reply(board, direction, depth, 0, result.1, INFINITY)?;
+            let index = DIRECTIONS.iter().position(|&candidate| candidate == direction)?;
+            let mut score = self.reply(board, direction, depth, 0, result.1, INFINITY)?;
+            if surviving_moves != 0 && surviving_moves & (1 << index) == 0 {
+                score -= IMMEDIATE_RISK_PENALTY;
+            }
             if score > result.1 {
                 result = (direction, score);
             }
         }
         Some(result)
+    }
+
+    fn surviving_root_moves(&self, board: &BoardState) -> u8 {
+        let candidates = possible_moves(
+            &board.snakes[self.us],
+            board,
+            self.settings.hazard_damage,
+        );
+        let mut surviving = 0;
+        for (index, direction) in DIRECTIONS.into_iter().enumerate() {
+            if candidates & (1 << index) == 0 {
+                continue;
+            }
+            let survives_every_reply =
+                ordered_moves(board, self.them, self.settings, Direction::Up).all(|response| {
+                    self.simulate(board, direction, response).is_some_and(|next| {
+                        !next.snakes[self.us].eliminated_cause.is_eliminated()
+                    })
+                });
+            if survives_every_reply {
+                surviving |= 1 << index;
+            }
+        }
+        surviving
     }
 
     fn reply(
@@ -361,5 +406,98 @@ impl Search {
             rules::standard::execute_turn(&mut next, &moves, &self.rules).ok()?;
         }
         Some(next)
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use rules::EliminationCause;
+
+    fn point(x: i32, y: i32) -> Point {
+        Point::new(x, y)
+    }
+
+    fn snake(id: &str, health: i32, body: &[(i32, i32)]) -> Snake {
+        Snake {
+            id: id.into(),
+            health,
+            body: body.iter().map(|&(x, y)| point(x, y)).collect(),
+            eliminated_cause: EliminationCause::NotEliminated,
+            eliminated_by: String::new(),
+            eliminated_on_turn: 0,
+        }
+    }
+
+    fn arena_draw_position(
+        turn: i32,
+        food: &[(i32, i32)],
+        us: Snake,
+        them: Snake,
+    ) -> BoardState {
+        BoardState {
+            width: 11,
+            height: 11,
+            food: food.iter().map(|&(x, y)| point(x, y)).collect(),
+            hazards: Vec::new(),
+            turn,
+            snakes: vec![us, them],
+        }
+    }
+
+    #[test]
+    fn avoids_three_voluntary_arena_draws() {
+        let positions = [
+            (
+                arena_draw_position(
+                    10,
+                    &[(0, 6), (9, 9), (4, 10)],
+                    snake("us", 100, &[(5, 5), (4, 5), (4, 6), (4, 6)]),
+                    snake("them", 92, &[(5, 7), (4, 7), (3, 7), (2, 7)]),
+                ),
+                Direction::Up,
+            ),
+            (
+                arena_draw_position(
+                    3,
+                    &[(10, 6), (6, 0), (5, 5)],
+                    snake("us", 97, &[(6, 5), (7, 5), (8, 5)]),
+                    snake("them", 97, &[(5, 4), (5, 3), (5, 2)]),
+                ),
+                Direction::Left,
+            ),
+            (
+                arena_draw_position(
+                    7,
+                    &[(2, 0), (0, 8), (5, 5)],
+                    snake("us", 93, &[(5, 4), (4, 4), (4, 3)]),
+                    snake("them", 93, &[(5, 6), (4, 6), (3, 6)]),
+                ),
+                Direction::Up,
+            ),
+        ];
+
+        for (board, fatal_direction) in positions {
+            let settings = Settings {
+                constrictor: false,
+                hazard_damage: 0,
+            };
+            assert_ne!(greedy(&board, 0, settings, Weights::default()), fatal_direction);
+            assert_ne!(
+                choose(
+                    &board,
+                    0,
+                    settings,
+                    Weights::default(),
+                    SearchLimit {
+                        nodes: 6_000,
+                        depth: 8,
+                        deadline: None,
+                    },
+                )
+                .direction,
+                fatal_direction,
+            );
+        }
     }
 }
