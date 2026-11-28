@@ -106,12 +106,20 @@ pub fn choose(
         nodes: 0,
     };
     let surviving_root_moves = search.surviving_root_moves(board);
+    let open_draw_risks = if board.snakes[us].body.len() <= 8
+        && body_safe_moves(&board.snakes[us], board, settings.hazard_damage).count_ones() >= 2
+    {
+        search.equal_head_draw_moves(board)
+    } else {
+        0
+    };
     for depth in 1..=limit.depth {
         let Some((direction, score)) = search.root(
             board,
             depth,
             decision.direction,
             surviving_root_moves,
+            open_draw_risks,
         ) else {
             break;
         };
@@ -169,8 +177,7 @@ pub fn greedy(board: &BoardState, us: usize, settings: Settings, weights: Weight
             best = (score, direction);
         }
         if !head_risk
-            && best_without_head_risk
-                .is_none_or(|candidate: (i32, Direction)| score > candidate.0)
+            && best_without_head_risk.is_none_or(|candidate: (i32, Direction)| score > candidate.0)
         {
             best_without_head_risk = Some((score, direction));
         }
@@ -239,6 +246,31 @@ fn possible_moves(snake: &Snake, board: &BoardState, hazard_damage: i32) -> u8 {
     candidates
 }
 
+/// Moves that are not guaranteed to hit a wall or a non-tail body segment.
+///
+/// Tails are deliberately treated as potentially free: they normally move on
+/// the next turn, and food choices are not known until both snakes move. This
+/// makes a zero result conservative -- every possible move is certainly fatal.
+fn body_safe_moves(snake: &Snake, board: &BoardState, hazard_damage: i32) -> u8 {
+    let candidates = possible_moves(snake, board, hazard_damage);
+    let head = snake.head();
+    let mut safe = 0;
+    for (index, direction) in DIRECTIONS.into_iter().enumerate() {
+        if candidates & (1 << index) == 0 {
+            continue;
+        }
+        let target = moved(head, direction);
+        let hits_body = board.snakes.iter().any(|other| {
+            !other.eliminated_cause.is_eliminated()
+                && other.body[..other.body.len().saturating_sub(1)].contains(&target)
+        });
+        if !hits_body {
+            safe |= 1 << index;
+        }
+    }
+    safe
+}
+
 fn ordered_moves(
     board: &BoardState,
     index: usize,
@@ -282,10 +314,16 @@ impl Search {
         depth: u8,
         preferred: Direction,
         surviving_moves: u8,
+        open_draw_risks: u8,
     ) -> Option<(Direction, i32)> {
         let mut result = (preferred, -INFINITY);
         for direction in ordered_moves(board, self.us, self.settings, preferred) {
-            let index = DIRECTIONS.iter().position(|&candidate| candidate == direction)?;
+            let index = DIRECTIONS
+                .iter()
+                .position(|&candidate| candidate == direction)?;
+            if surviving_moves != 0 && open_draw_risks & (1 << index) != 0 {
+                continue;
+            }
             let mut score = self.reply(board, direction, depth, 0, result.1, INFINITY)?;
             if surviving_moves != 0 && surviving_moves & (1 << index) == 0 {
                 score -= IMMEDIATE_RISK_PENALTY;
@@ -297,12 +335,37 @@ impl Search {
         Some(result)
     }
 
+    fn equal_head_draw_moves(&self, board: &BoardState) -> u8 {
+        let us = &board.snakes[self.us];
+        let them = &board.snakes[self.them];
+        if us.body.len() != them.body.len() {
+            return 0;
+        }
+        let our_moves = possible_moves(us, board, self.settings.hazard_damage);
+        let their_moves = possible_moves(them, board, self.settings.hazard_damage);
+        let mut risks = 0;
+        for (our_index, our_direction) in DIRECTIONS.into_iter().enumerate() {
+            if our_moves & (1 << our_index) == 0 {
+                continue;
+            }
+            let target = moved(us.head(), our_direction);
+            let contested =
+                DIRECTIONS
+                    .into_iter()
+                    .enumerate()
+                    .any(|(their_index, their_direction)| {
+                        their_moves & (1 << their_index) != 0
+                            && moved(them.head(), their_direction) == target
+                    });
+            if contested {
+                risks |= 1 << our_index;
+            }
+        }
+        risks
+    }
+
     fn surviving_root_moves(&self, board: &BoardState) -> u8 {
-        let candidates = possible_moves(
-            &board.snakes[self.us],
-            board,
-            self.settings.hazard_damage,
-        );
+        let candidates = possible_moves(&board.snakes[self.us], board, self.settings.hazard_damage);
         let mut surviving = 0;
         for (index, direction) in DIRECTIONS.into_iter().enumerate() {
             if candidates & (1 << index) == 0 {
@@ -310,9 +373,8 @@ impl Search {
             }
             let survives_every_reply =
                 ordered_moves(board, self.them, self.settings, Direction::Up).all(|response| {
-                    self.simulate(board, direction, response).is_some_and(|next| {
-                        !next.snakes[self.us].eliminated_cause.is_eliminated()
-                    })
+                    self.simulate(board, direction, response)
+                        .is_some_and(|next| !next.snakes[self.us].eliminated_cause.is_eliminated())
                 });
             if survives_every_reply {
                 surviving |= 1 << index;
@@ -429,12 +491,7 @@ mod tests {
         }
     }
 
-    fn arena_draw_position(
-        turn: i32,
-        food: &[(i32, i32)],
-        us: Snake,
-        them: Snake,
-    ) -> BoardState {
+    fn arena_draw_position(turn: i32, food: &[(i32, i32)], us: Snake, them: Snake) -> BoardState {
         BoardState {
             width: 11,
             height: 11,
@@ -446,7 +503,7 @@ mod tests {
     }
 
     #[test]
-    fn avoids_three_voluntary_arena_draws() {
+    fn avoids_six_voluntary_arena_draws() {
         let positions = [
             (
                 arena_draw_position(
@@ -475,6 +532,51 @@ mod tests {
                 ),
                 Direction::Up,
             ),
+            (
+                arena_draw_position(
+                    98,
+                    &[(0, 6), (10, 6), (9, 2), (6, 1)],
+                    snake("us", 67, &[(5, 5), (4, 5), (4, 6), (5, 6), (6, 6), (6, 5)]),
+                    snake(
+                        "them",
+                        89,
+                        &[(7, 5), (7, 6), (8, 6), (8, 7), (7, 7), (7, 8)],
+                    ),
+                ),
+                Direction::Right,
+            ),
+            (
+                arena_draw_position(
+                    3,
+                    &[(4, 10), (0, 4), (5, 5)],
+                    snake("us", 97, &[(5, 6), (5, 7), (5, 8)]),
+                    snake("them", 97, &[(4, 5), (3, 5), (2, 5)]),
+                ),
+                Direction::Down,
+            ),
+            (
+                arena_draw_position(
+                    93,
+                    &[
+                        (4, 10),
+                        (5, 10),
+                        (10, 3),
+                        (7, 10),
+                        (6, 0),
+                        (7, 0),
+                        (9, 3),
+                        (7, 9),
+                        (1, 4),
+                    ],
+                    snake("us", 72, &[(4, 7), (5, 7), (5, 6), (5, 5), (5, 4), (6, 4)]),
+                    snake(
+                        "them",
+                        100,
+                        &[(3, 8), (3, 7), (3, 6), (3, 5), (3, 4), (3, 4)],
+                    ),
+                ),
+                Direction::Up,
+            ),
         ];
 
         for (board, fatal_direction) in positions {
@@ -482,22 +584,37 @@ mod tests {
                 constrictor: false,
                 hazard_damage: 0,
             };
-            assert_ne!(greedy(&board, 0, settings, Weights::default()), fatal_direction);
             assert_ne!(
-                choose(
+                greedy(&board, 0, settings, Weights::default()),
+                fatal_direction
+            );
+            for depth in [1, 8] {
+                let decision = choose(
                     &board,
                     0,
                     settings,
                     Weights::default(),
                     SearchLimit {
                         nodes: 6_000,
-                        depth: 8,
+                        depth,
                         deadline: None,
                     },
-                )
-                .direction,
-                fatal_direction,
-            );
+                );
+                let selected_index = DIRECTIONS
+                    .iter()
+                    .position(|&direction| direction == decision.direction)
+                    .unwrap();
+                assert_ne!(
+                    body_safe_moves(&board.snakes[0], &board, settings.hazard_damage)
+                        & (1 << selected_index),
+                    0,
+                    "selected an immediate body collision at search depth {depth}"
+                );
+                assert_ne!(
+                    decision.direction, fatal_direction,
+                    "repeated fatal Arena draw at search depth {depth}"
+                );
+            }
         }
     }
 }
