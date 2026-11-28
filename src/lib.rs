@@ -503,7 +503,7 @@ mod tests {
     }
 
     #[test]
-    fn avoids_six_voluntary_arena_draws() {
+    fn avoids_seven_voluntary_arena_draws() {
         let positions = [
             (
                 arena_draw_position(
@@ -576,6 +576,15 @@ mod tests {
                     ),
                 ),
                 Direction::Up,
+            ),
+            (
+                arena_draw_position(
+                    7,
+                    &[(0, 2), (10, 2), (5, 5)],
+                    snake("us", 93, &[(4, 5), (4, 4), (3, 4)]),
+                    snake("them", 93, &[(6, 5), (6, 4), (6, 3)]),
+                ),
+                Direction::Right,
             ),
         ];
 
